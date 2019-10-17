@@ -92,13 +92,8 @@ class BinarySearchTree:
 
                 values.append(child.value)
 
-        string_to_print = ""
-        for index, value in enumerate(sorted(values)):
-            string_to_print += str(value)
-            if index != len(values) - 1:
-                string_to_print += "\n"
-
-        print(string_to_print)
+        for value in sorted(values):
+            print(value)
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
